@@ -1,0 +1,23 @@
+{
+  "UniqueID": "ceddieeee.ColoredTorches_CP",
+  "Name": "(CP) Colored Torches",
+  "Author": "ceddieeee",
+  "Version": "1.0.0",
+  "Description": "Content pack for ColoredTorches",
+  "MinimumApiVersion": "4.5",
+  "MinimumGameVersion": "1.6.15",
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  },
+  "Dependencies": [
+    {
+      "UniqueID": "ceddieeee.ColoredTorches",
+      "IsRequired": true
+    },
+    {
+      "UniqueID": "spacechase0.SpaceCore",
+      "IsRequired": true
+    }
+  ],
+  "UpdateKeys": [ "Nexus:45289" ]
+}

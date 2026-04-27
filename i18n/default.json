@@ -1,0 +1,17 @@
+{
+  "Config.Option.RGB.Name": "Color",
+  "Config.Option.RGB.Tooltip": "Enter RGB values separated by commas (e.g., 255, 255, 255).",
+
+  "Config.Option.Radius.Name": "Radius",
+  "Config.Option.Radius.Tooltip": "Controls how far the light reaches.",
+
+  "Config.Option.Intensity.Name": "Intensity",
+  "Config.Option.Intensity.Tooltip": "Controls the brightness and transparency of the light.",
+
+  "Config.Color.Red.Title": "Red",
+  "Config.Color.Orange.Title": "Orange",
+  "Config.Color.Yellow.Title": "Yellow",
+  "Config.Color.Green.Title": "Green",
+  "Config.Color.Blue.Title": "Blue",
+  "Config.Color.Purple.Title": "Purple"
+}

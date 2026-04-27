@@ -1,0 +1,21 @@
+{
+  /*
+   | This file is automatically updated by ModManifestBuilder
+   | when the project is compiled.
+   | 
+   | Changes made to this file may be overwritten.
+   | 
+   */
+  "$schema": "https://smapi.io/schemas/manifest.json",
+  "UniqueID": "ceddieeee.ColoredTorches",
+  "Name": "Colored Torches",
+  "Author": "ceddieeee",
+  "Version": "1.0.0",
+  "Description": "Adds a craftable colored torch variants",
+  "MinimumApiVersion": "4.5",
+  "MinimumGameVersion": "1.6.15",
+  "EntryDll": "ColoredTorches.dll",
+  "UpdateKeys": [
+    "Nexus:45289"
+  ]
+}

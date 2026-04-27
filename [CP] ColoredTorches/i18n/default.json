@@ -1,0 +1,25 @@
+{
+  "RedTorch.Name": "Red Torch",
+  "RedTorch.Description": "Gives off a steady red glow.",
+  "RedTorch.Ingredient": "Red Item (Any)",
+
+  "OrangeTorch.Name": "Orange Torch",
+  "OrangeTorch.Description": "Emits a warm orange light.",
+  "OrangeTorch.Ingredient": "Orange Item (Any)",
+
+  "YellowTorch.Name": "Yellow Torch",
+  "YellowTorch.Description": "Casts a bright yellow glow.",
+  "YellowTorch.Ingredient": "Yellow Item (Any)",
+
+  "GreenTorch.Name": "Green Torch",
+  "GreenTorch.Description": "Casts a faint green light.",
+  "GreenTorch.Ingredient": "Green Item (Any)",
+
+  "BlueTorch.Name": "Blue Torch",
+  "BlueTorch.Description": "Emits a cool blue flame.",
+  "BlueTorch.Ingredient": "Blue Item (Any)",
+
+  "PurpleTorch.Name": "Purple Torch",
+  "PurpleTorch.Description": "Glows with a soft purple hue.",
+  "PurpleTorch.Ingredient": "Purple Item (Any)"
+}

@@ -1,0 +1,267 @@
+{
+  "$schema": "https://smapi.io/schemas/content-patcher.json",
+  "Format":  "2.9.0",
+  "Changes": [
+    {
+      "LogName": "Load torches texture",
+      "Action": "Load",
+      "Target": "Mods/{{ModId}}/Textures",
+      "FromFile": "assets/colored_torches.png"
+    },
+    {
+      "LogName": "Load custom items",
+      "Action": "EditData",
+      "Target": "Data/Objects",
+      "Entries": {
+        "{{ModId}}_RedTorch": {
+          "Name": "{{ModId}}_RedTorch",
+          "DisplayName": "{{i18n: RedTorch.Name}}",
+          "Description": "{{i18n: RedTorch.Description}}",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 5,
+          "Texture": "Mods/{{ModId}}/Textures",
+          "SpriteIndex": 0,
+          "ContextTags": [
+            "light_source",
+            "torch_item"
+          ]
+        },
+        "{{ModId}}_OrangeTorch": {
+          "Name": "{{ModId}}_OrangeTorch",
+          "DisplayName": "{{i18n: OrangeTorch.Name}}",
+          "Description": "{{i18n: OrangeTorch.Description}}",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 5,
+          "Texture": "Mods/{{ModId}}/Textures",
+          "SpriteIndex": 1,
+          "ContextTags": [
+            "light_source",
+            "torch_item"
+          ]
+        },
+        "{{ModId}}_YellowTorch": {
+          "Name": "{{ModId}}_YellowTorch",
+          "DisplayName": "{{i18n: YellowTorch.Name}}",
+          "Description": "{{i18n: YellowTorch.Description}}",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 5,
+          "Texture": "Mods/{{ModId}}/Textures",
+          "SpriteIndex": 2,
+          "ContextTags": [
+            "light_source",
+            "torch_item"
+          ]
+        },
+        "{{ModId}}_GreenTorch": {
+          "Name": "{{ModId}}_GreenTorch",
+          "DisplayName": "{{i18n: GreenTorch.Name}}",
+          "Description": "{{i18n: GreenTorch.Description}}",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 5,
+          "Texture": "Mods/{{ModId}}/Textures",
+          "SpriteIndex": 3,
+          "ContextTags": [
+            "light_source",
+            "torch_item"
+          ]
+        },
+        "{{ModId}}_BlueTorch": {
+          "Name": "{{ModId}}_BlueTorch",
+          "DisplayName": "{{i18n: BlueTorch.Name}}",
+          "Description": "{{i18n: BlueTorch.Description}}",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 5,
+          "Texture": "Mods/{{ModId}}/Textures",
+          "SpriteIndex": 4,
+          "ContextTags": [
+            "light_source",
+            "torch_item"
+          ]
+        },
+        "{{ModId}}_PurpleTorch": {
+          "Name": "{{ModId}}_PurpleTorch",
+          "DisplayName": "{{i18n: PurpleTorch.Name}}",
+          "Description": "{{i18n: PurpleTorch.Description}}",
+          "Type": "Crafting",
+          "Category": 0,
+          "Price": 5,
+          "Texture": "Mods/{{ModId}}/Textures",
+          "SpriteIndex": 5,
+          "ContextTags": [
+            "light_source",
+            "torch_item"
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Register crafting recipe stubs",
+      "Action": "EditData",
+      "Target": "Data/CraftingRecipes",
+      "Entries": {
+        "{{ModId}}_RedTorch": "93 1/Field/(O){{ModId}}_RedTorch/false/default/",
+        "{{ModId}}_OrangeTorch": "93 1/Field/(O){{ModId}}_OrangeTorch/false/default/",
+        "{{ModId}}_YellowTorch": "93 1/Field/(O){{ModId}}_YellowTorch/false/default/",
+        "{{ModId}}_GreenTorch": "93 1/Field/(O){{ModId}}_GreenTorch/false/default/",
+        "{{ModId}}_BlueTorch": "93 1/Field/(O){{ModId}}_BlueTorch/false/default/",
+        "{{ModId}}_PurpleTorch": "93 1/Field/(O){{ModId}}_PurpleTorch/false/default/"
+      }
+    },
+    {
+      "LogName": "SpaceCore crafting recipe overrides",
+      "Action": "EditData",
+      "Target": "spacechase0.SpaceCore/CraftingRecipeOverrides",
+      "Entries": {
+        "{{ModId}}_RedTorch": {
+          "ProductQualifiedId": "(O){{ModId}}_RedTorch",
+          "ProductAmount": 1,
+          "Ingredients": [
+            {
+              "Type": "Item",
+              "Value": "(O)93",
+              "Amount": 1
+            },
+            {
+              "Type": "ContextTag",
+              "Value": "color_red, color_salmon, color_dark_red, color_pink",
+              "Amount": 1,
+              "OverrideText": "{{i18n: RedTorch.Ingredient}}",
+              "OverrideTexturePath": "Maps/springobjects",
+              "OverrideTextureRect": {
+                "X": 208,
+                "Y": 400,
+                "Width": 16,
+                "Height": 16
+              }
+            }
+          ]
+        },
+        "{{ModId}}_OrangeTorch": {
+          "ProductQualifiedId": "(O){{ModId}}_OrangeTorch",
+          "ProductAmount": 1,
+          "Ingredients": [
+            {
+              "Type": "Item",
+              "Value": "(O)93",
+              "Amount": 1
+            },
+            {
+              "Type": "ContextTag",
+              "Value": "color_orange, color_dark_orange, color_dark_brown, color_brown, color_copper",
+              "Amount": 1,
+              "OverrideText": "{{i18n: OrangeTorch.Ingredient}}",
+              "OverrideTexturePath": "Maps/springobjects",
+              "OverrideTextureRect": {
+                "X": 288,
+                "Y": 240,
+                "Width": 16,
+                "Height": 16
+              }
+            }
+          ]
+        },
+        "{{ModId}}_YellowTorch": {
+          "ProductQualifiedId": "(O){{ModId}}_YellowTorch",
+          "ProductAmount": 1,
+          "Ingredients": [
+            {
+              "Type": "Item",
+              "Value": "(O)93",
+              "Amount": 1
+            },
+            {
+              "Type": "ContextTag",
+              "Value": "color_yellow, color_dark_yellow, color_gold, color_sand",
+              "Amount": 1,
+              "OverrideText": "{{i18n: YellowTorch.Ingredient}}",
+              "OverrideTexturePath": "Maps/springobjects",
+              "OverrideTextureRect": {
+                "X": 320,
+                "Y": 48,
+                "Width": 16,
+                "Height": 16
+              }
+            }
+          ]
+        },
+        "{{ModId}}_GreenTorch": {
+          "ProductQualifiedId": "(O){{ModId}}_GreenTorch",
+          "ProductAmount": 1,
+          "Ingredients": [
+            {
+              "Type": "Item",
+              "Value": "(O)93",
+              "Amount": 1
+            },
+            {
+              "Type": "ContextTag",
+              "Value": "color_green, color_dark_green, color_lime, color_yellow_green, color_jade",
+              "Amount": 1,
+              "OverrideText": "{{i18n: GreenTorch.Ingredient}}",
+              "OverrideTexturePath": "Maps/springobjects",
+              "OverrideTextureRect": {
+                "X": 48,
+                "Y": 512,
+                "Width": 16,
+                "Height": 16
+              }
+            }
+          ]
+        },
+        "{{ModId}}_BlueTorch": {
+          "ProductQualifiedId": "(O){{ModId}}_BlueTorch",
+          "ProductAmount": 1,
+          "Ingredients": [
+            {
+              "Type": "Item",
+              "Value": "(O)93",
+              "Amount": 1
+            },
+            {
+              "Type": "ContextTag",
+              "Value": "color_blue, color_dark_blue, color_dark_cyan, color_light_cyan, color_cyan, color_aquamarine",
+              "Amount": 1,
+              "OverrideText": "{{i18n: BlueTorch.Ingredient}}",
+              "OverrideTexturePath": "Maps/springobjects",
+              "OverrideTextureRect": {
+                "X": 368,
+                "Y": 96,
+                "Width": 16,
+                "Height": 16
+              }
+            }
+          ]
+        },
+        "{{ModId}}_PurpleTorch": {
+          "ProductQualifiedId": "(O){{ModId}}_PurpleTorch",
+          "ProductAmount": 1,
+          "Ingredients": [
+            {
+              "Type": "Item",
+              "Value": "(O)93",
+              "Amount": 1
+            },
+            {
+              "Type": "ContextTag",
+              "Value": "color_purple, color_dark_purple, color_dark_pink, color_pale_violet_red, color_poppyseed, color_iridium",
+              "Amount": 1,
+              "OverrideText": "{{i18n: PurpleTorch.Ingredient}}",
+              "OverrideTexturePath": "Maps/springobjects",
+              "OverrideTextureRect": {
+                "X": 192,
+                "Y": 448,
+                "Width": 16,
+                "Height": 16
+              }
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
