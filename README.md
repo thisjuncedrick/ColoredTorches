@@ -38,7 +38,7 @@ Delete the mod folder from your _Stardew Valley/Mods_ directory. Safe to remove 
 - **Sprinkler Placement**: Unlike vanilla torches, colored torches cannot be placed on top of sprinklers. This is a current limitation of the mod and is not supported.
 
 ### Bug Reports
-Running into a torch that refuses to cooperate? Post in the [Posts tab](https://www.nexusmods.com/stardewvalley/mods/45289?tab=posts) or file a [GitHub]() issue. Please include:
+Running into a torch that refuses to cooperate? Post in the [Posts tab](https://www.nexusmods.com/stardewvalley/mods/45289?tab=posts) or file a [GitHub](issues) issue. Please include:
 - Your [**SMAPI log**](https://smapi.io/log).
 - A description of what went wrong and when.
 
