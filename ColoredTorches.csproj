@@ -6,7 +6,7 @@
 		<Name>Colored Torches</Name>
 		<Authors>ceddieeee</Authors>
 		<Description>Adds a craftable colored torch variants</Description>
-		<Version>1.0.0</Version>
+		<Version>1.0.1</Version>
 		<MinimumApiVersion>auto</MinimumApiVersion>
 		<MinimumGameVersion_Behavior>SetFull</MinimumGameVersion_Behavior>
 		<UpdateKeys>Nexus:45289</UpdateKeys>

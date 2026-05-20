@@ -4,7 +4,6 @@ using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 
-using StardewValley;
 using ColoredTorches.Integrations;
 using ColoredTorches.Patches;
 
@@ -23,11 +22,9 @@ public class ModEntry : Mod
   private TorchManager Manager = null!;
   private static IMonitor ModMonitor = null!;
 
-  internal const string MODDATA_KEY = "ceddieeee.ColoredTorches/TorchId";
-  internal const string CONTENT_PACK_ID = "ceddieeee.ColoredTorches_CP";
+  internal const string MODDATA_KEY = "ceddieeee.ColoredTorches/AttachedTorch";
 
   internal static Texture2D MouseCursors = null!;
-
 
   public override void Entry(IModHelper helper)
   {
@@ -43,6 +40,7 @@ public class ModEntry : Mod
     var harmony = new Harmony(ModManifest.UniqueID);
     VisualPatches.Apply(harmony);
     FencePatches.Apply(harmony);
+    SprinklerPatches.Apply(harmony);
 
     helper.Events.GameLoop.GameLaunched    += OnGameLaunched;
     helper.Events.GameLoop.SaveLoaded      += OnSaveLoaded;

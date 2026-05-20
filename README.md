@@ -6,7 +6,8 @@ Vanilla torches get the job done, sure. But when you've spent hours decorating y
 1. **Six Craftable Colored Torches**. Red, Orange, Yellow, Green, Blue, and Purple. Each torch is crafted from a vanilla torch plus one color-appropriate ingredient pulled by context tag.
 2. **Colored Light, Flame, and Halo**. The light source, the flame animation, and the halo glow all reflect the torch's color. It matches the default game's visual.
 3. **Fence Post Support**. Colored torches can be mounted directly onto fence posts, just like vanilla torches.
-4. **Fully Configurable**. Each torch color has its own RGB value, light radius, and intensity setting. Configure in exactly the atmosphere you want.
+4. **Sprinkler Support**. Custom torches can be attached to the top of any placed sprinkler. The sprinkler will keep working as usual while holding your custom torch on top.
+5. **Fully Configurable**. Each torch color has its own RGB value, light radius, and intensity setting. Configure in exactly the atmosphere you want.
 
 ### Crafting
 Each colored torch requires:
@@ -30,15 +31,14 @@ Fully compatible with Generic Mod Config Menu. Accessible from the title screen 
 6. Launch the game using SMAPI.
 
 ### Uninstallation
-Delete the mod folder from your _Stardew Valley/Mods_ directory. Safe to remove mid-playthrough. Any placed colored torches will revert to broken objects, pick them up before uninstalling.
+Delete the mod folder from your *Stardew Valley/Mods* directory. Safe to remove mid-playthrough. Placed sprinklers will fall back to using standard vanilla torches, but any standalone or fence-mounted custom torches will turn into broken objects. **Pick them up with a tool before uninstalling!**
 
 ### Known Limitations
 - Mods that globally modify all light sources may conflict with this mod. If another mod overrides every light source in the game, it will likely overwrite the colors applied by this one.
 - No known conflicts with popular overhaul mods such as [_Stardew Valley Expanded_](https://www.nexusmods.com/stardewvalley/mods/3753) or [_Ridgeside Village_](https://www.nexusmods.com/stardewvalley/mods/7286), as this mod only touches its own custom torch items.
-- **Sprinkler Placement**: Unlike vanilla torches, colored torches cannot be placed on top of sprinklers. This is a current limitation of the mod and is not supported.
 
 ### Bug Reports
-Running into a torch that refuses to cooperate? Post in the [Posts tab](https://www.nexusmods.com/stardewvalley/mods/45289?tab=posts) or file a [GitHub](issues) issue. Please include:
+Running into a torch that refuses to cooperate? Post in the [Posts tab](https://www.nexusmods.com/stardewvalley/mods/45289?tab=posts) or file a [GitHub](../../issues) issue. Please include:
 - Your [**SMAPI log**](https://smapi.io/log).
 - A description of what went wrong and when.
 

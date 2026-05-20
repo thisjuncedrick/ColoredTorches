@@ -7,8 +7,8 @@ namespace ColoredTorches;
 
 internal sealed class TorchManager
 {
-  private const string CPId = ModEntry.CONTENT_PACK_ID;
-  
+  private const string CPId = "ceddieeee.ColoredTorches_CP";
+
   private readonly Dictionary<long, string> PlayerLightCache = new();
   private static readonly Dictionary<string, Func<ModConfig, TorchColorConfig>> TorchMap = new()
   {
@@ -83,6 +83,25 @@ internal sealed class TorchManager
         continue;
       }
 
+      // Sprinkler "holding" custom torches
+      if (obj.IsSprinkler() && obj.SpecialVariable == 999999 && obj.modData.TryGetValue(ModEntry.MODDATA_KEY, out string? torchId))
+      {
+        if (TorchData.TryGet(torchId, out var sprinklerTorchSettings)
+            && obj.lightSource is { } sprinklerLightSource  
+            && Game1.currentLightSources.TryGetValue(sprinklerLightSource.Id, out var sprinklerLight)
+        )
+        {
+          if (sprinklerLight.radius.Value != sprinklerTorchSettings.Radius)
+            sprinklerLight.radius.Value = sprinklerTorchSettings.Radius;
+
+          if (sprinklerLight.color.Value != sprinklerTorchSettings.InvertedColor)
+            sprinklerLight.color.Value = sprinklerTorchSettings.InvertedColor;
+        }
+
+        continue;
+      }
+
+      // Standalone torch
       if (TorchData.TryGet(obj.ItemId, out var settings)
           && obj.lightSource is { } source
           && Game1.currentLightSources.TryGetValue(source.Id, out var light)
